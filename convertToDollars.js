@@ -1,7 +1,7 @@
 
 function currencyConverter(value) {
-    var num = '$' + value.toFixed(2).replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,");
-    return num;
+    var dollarConvert = '$' + value.toFixed(2).replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,");
+    return dollarConvert;
 }
 
 console.log(currencyConverter(319945));
