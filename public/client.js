@@ -2,9 +2,10 @@ $(document).ready(function() {
 
     $.ajax({
         method: 'GET',
-        url: '/random',
+        url: '/moduleMadness',
         success: function(response) {
-             $('#balance').append(exportRandomCurrency(100, 1000000));
+             $('#balance').append(response);
+             
         }
     })
 })
