@@ -11,7 +11,7 @@ var moduleThree = require('./moduleThree');
 
 // console.log(currencyConverter(3100));
 
-console.log(moduleThree(100, 1000000));
+console.log(moduleThree.method2() + moduleThree.method1(100, 1000000));
 
 app.use(express.static('public'));
 
