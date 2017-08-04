@@ -4,6 +4,6 @@ function currencyConverter(value) {
     return dollarConvert;
 }
 
-console.log(currencyConverter(319945));
+// console.log(currencyConverter(319945));
 
-module.export = currencyConverter;
+module.exports = currencyConverter;

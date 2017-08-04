@@ -1,10 +1,14 @@
-// var moduleOne = require('./randomNumber');
+var moduleOne = require('./randomNumber');
  
-// var moduleTwo = require('./convertToDollars');
+var moduleTwo = require('./convertToDollars');
+
+
+
 
 function exportRandomCurrency(min, max) {
-    currencyConverter(randomNumber(min, max))
-}
-console.log(exportRandomCurrency(100, 1000000));
+    return moduleTwo(moduleOne(min, max));
 
-module.export = exportRandomCurrency;
+}
+// console.log(exportRandomCurrency(100, 1000000));
+
+module.exports = exportRandomCurrency;
